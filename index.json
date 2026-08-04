@@ -25,6 +25,14 @@
       "dir": "web/scene-star",
       "entry": "index.html",
       "thumb": "thumbs/scene-star.jpg"
+    },
+    {
+      "id": "images2-1",
+      "name": "夕陽冰山",
+      "kind": "image",
+      "file": "wallpapers/images2-1.png",
+      "thumb": "thumbs/images2-1.png",
+      "sizeMB": 2.57
     }
   ]
 }
