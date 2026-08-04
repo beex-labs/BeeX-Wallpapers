@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "aurora-glow",
+      "name": "極光流光",
+      "kind": "video",
+      "file": "wallpapers/aurora-glow.mp4",
+      "thumb": "thumbs/aurora-glow.jpg",
+      "tags": ["4K", "慢速", "光效"],
+      "sizeMB": 24
+    },
+    {
+      "id": "deep-space",
+      "name": "深空星雲",
+      "kind": "image",
+      "file": "wallpapers/deep-space.jpg",
+      "thumb": "thumbs/deep-space.jpg",
+      "sizeMB": 6
+    },
+    {
+      "id": "scene-star",
+      "name": "星空場景",
+      "kind": "web",
+      "dir": "web/scene-star",
+      "entry": "index.html",
+      "thumb": "thumbs/scene-star.jpg"
+    }
+  ]
+}
