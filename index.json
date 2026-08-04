@@ -10,6 +10,14 @@
       "sizeMB": 2.58
     },
     {
+      "id": "冰山極夜",
+      "name": "冰山極夜",
+      "kind": "image",
+      "file": "wallpapers/冰山極夜.png",
+      "thumb": "thumbs/冰山極夜.png",
+      "sizeMB": 2.66
+    },
+    {
       "id": "scene-star",
       "name": "星空場景",
       "kind": "web",
