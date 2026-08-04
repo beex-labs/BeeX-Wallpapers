@@ -1,0 +1,5 @@
+#!/bin/sh
+set -eu
+
+python scripts/sync_index.py
+git add index.json

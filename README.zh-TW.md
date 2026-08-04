@@ -1,5 +1,18 @@
 # BeeX-Wallpapers
 
+## 自動維護清單與定時生圖
+
+新增或刪除 `wallpapers/`、`web/`、`thumbs/` 內的資源後，不需要手動修改 `index.json`：
+
+```powershell
+# 每位開發者只需執行一次
+.\scripts\install_hooks.ps1
+```
+
+之後每次 `git commit` 前會自動掃描資源、更新 `index.json`，並把它加入該次提交。GitHub Actions 也會在 push/PR 時檢查清單，防止未安裝 hook 的提交漏掉更新。
+
+倉庫另有每週一執行的 AI 生圖工作流。到 GitHub 倉庫的 `Settings → Secrets and variables → Actions` 新增名為 `OPENAI_API_KEY` 的 repository secret，即可讓它定時生成圖片、同步清單並提交；也可在 Actions 頁面手動觸發。此功能會使用 OpenAI API 額度。
+
 **語言：** [English](README.md) | [简体中文](README.zh-CN.md) | 繁體中文
 
 **BeeX DeskNest** 的線上壁紙庫：所有壁紙透過 GitHub 倉庫 + jsDelivr CDN 分發，程式在「桌面壁紙 → 壁紙庫 → 線上壁紙」中拉取本倉庫的 `index.json` 清單展示並下載。
